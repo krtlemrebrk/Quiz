@@ -15,6 +15,8 @@
 		94064B93267E457C00C1E163 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94064B91267E457C00C1E163 /* LaunchScreen.storyboard */; };
 		94064B9E267E457C00C1E163 /* QuizTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94064B9D267E457C00C1E163 /* QuizTests.swift */; };
 		94064BA9267E457C00C1E163 /* QuizUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94064BA8267E457C00C1E163 /* QuizUITests.swift */; };
+		94064BB9267E5A0C00C1E163 /* QuizBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94064BB8267E5A0C00C1E163 /* QuizBrain.swift */; };
+		94064BBC267E5A8300C1E163 /* Quiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94064BBB267E5A8300C1E163 /* Quiz.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		94064BA4267E457C00C1E163 /* QuizUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuizUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		94064BA8267E457C00C1E163 /* QuizUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizUITests.swift; sourceTree = "<group>"; };
 		94064BAA267E457C00C1E163 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		94064BB8267E5A0C00C1E163 /* QuizBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizBrain.swift; sourceTree = "<group>"; };
+		94064BBB267E5A8300C1E163 /* Quiz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quiz.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,11 +105,12 @@
 			children = (
 				94064B86267E457B00C1E163 /* AppDelegate.swift */,
 				94064B88267E457B00C1E163 /* SceneDelegate.swift */,
-				94064B8A267E457B00C1E163 /* ViewController.swift */,
-				94064B8C267E457B00C1E163 /* Main.storyboard */,
 				94064B8F267E457C00C1E163 /* Assets.xcassets */,
 				94064B91267E457C00C1E163 /* LaunchScreen.storyboard */,
 				94064B94267E457C00C1E163 /* Info.plist */,
+				94064BBA267E5A1100C1E163 /* Model */,
+				94064BB6267E59E900C1E163 /* View */,
+				94064BB7267E59F500C1E163 /* Controller */,
 			);
 			path = Quiz;
 			sourceTree = "<group>";
@@ -126,6 +131,31 @@
 				94064BAA267E457C00C1E163 /* Info.plist */,
 			);
 			path = QuizUITests;
+			sourceTree = "<group>";
+		};
+		94064BB6267E59E900C1E163 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				94064B8C267E457B00C1E163 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		94064BB7267E59F500C1E163 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				94064B8A267E457B00C1E163 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		94064BBA267E5A1100C1E163 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				94064BB8267E5A0C00C1E163 /* QuizBrain.swift */,
+				94064BBB267E5A8300C1E163 /* Quiz.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,8 +289,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				94064B8B267E457B00C1E163 /* ViewController.swift in Sources */,
+				94064BBC267E5A8300C1E163 /* Quiz.swift in Sources */,
 				94064B87267E457B00C1E163 /* AppDelegate.swift in Sources */,
 				94064B89267E457B00C1E163 /* SceneDelegate.swift in Sources */,
+				94064BB9267E5A0C00C1E163 /* QuizBrain.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -436,9 +468,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_NOTICES = YES;
+				ASSETCATALOG_WARNINGS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DLMFN4KDDD;
 				INFOPLIST_FILE = Quiz/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -455,9 +490,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_NOTICES = YES;
+				ASSETCATALOG_WARNINGS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DLMFN4KDDD;
 				INFOPLIST_FILE = Quiz/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
